@@ -1,0 +1,8 @@
+services:
+  frontend:
+    build:
+      context: frontend
+      args:
+        UNISWAP_WEB_VERSION: ${UNISWAP_WEB_VERSION}
+    ports:
+      - ${PORT:-80}:80
